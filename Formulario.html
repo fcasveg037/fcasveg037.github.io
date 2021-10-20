@@ -16,18 +16,56 @@
 
 <hr/>
 	
-<form action="/my-handling-form-page" method="post">
+<form action="action.page.php" method="get">
    
-   <label for="name">Nombre:</label>
-   <input type="text" id="name" name="user_name"> </br>
+   <label for="name">Nombre: </label>
+   <input type="text" name="user_name" autofocus><br>
    
    <label for="mail">Correo electrónico:</label>
-   <input type="email" id="mail" name="user_mail"> </br>
+   <input type="email" id="mail" name="user_mail"><br>
 
-   <label for="msg">Mensaje:</label>
-   <textarea id="msg" name="user_message"></textarea>
+	<label for="url"> URL: </label>
+	<input type="url" name="paginaweb" placeholder="Escribe la URL de tu página web personal"><br>
+	
+	<label for="date"> Fecha: </label>
+	<input type="date" name="fecha"><br>
+	
+	<label for="time"> Tiempo: </label>
+	<input type="time" name="tiempo"><br>
+	
+	<label for="datetime-local"> Fecha y Hora: </label>
+	<input type="datetime-local" name="fechahora"><br>
+	
+	<label for="month"> Mes: </label>
+	<input type="month" name="mes"><br>
+	
+	<label for="week"> Semana: </label>
+	<input type="week" name="semana"><br>
+	
+	<label for="numer"> Número (min -10, max 10): </label>
+	<input type="number" name="numero" min="-10" max="10"><br>
+	
+	<lable for="phone"> Télefono: </label>
+	<input type="tel" name="telefono" pattern="[0-9]{9}" required> <small> (9 dígitos) </small><br>
+	
+	<label for="search"> Término de búsqueda: </label>
+	<input type="search" name="busqueda">
+	<input type="submit" value="Buscar"><br> 
+	
+	<label for="color"> Color favorito: </label>
+	<input type="color" name="colorfavorito"><br>
+	
+	
+	<input type="submit" value="Enviar"> 
+
 
 </form>
+
+<section>
+
+	<p> Pulsa <a href="./index.html"> aquí </a> para volver al indice. </p>
+	
+</section>
 
 <hr/>
 	
