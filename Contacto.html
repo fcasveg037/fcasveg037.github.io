@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title> Contacto </title>
+</head>
+
+<body>
+
+<header>
+
+	<h1 align="center"> Turismo de Cádiz - Descubre su gastronomía </h1>
+
+	<p align="center">
+	<img src="https://espanafascinante.com/wp-content/uploads/principal_lugares_provincias_turismo-en-Cádiz-1170x450.jpg" width="1200" height="250" border="3px"> <p>
+	
+</header>
+
+<hr/>
+
+<section>
+
+	<form action="./PracticaLibre.html" method="get">
+
+		<label for="name"><b> Nombre: </b></label>
+  		<input type="text" id="name" name="name" autofocus><br>
+
+  		<label for="mail"><b> Correo electrónico:</b></label>
+   		<input type="email" id="email" name="email"><br>
+
+   		<label for="date"><b> Fecha: </b></label>
+		<input type="date" name="fecha"><br>
+
+		<lable for="phone"><b> Télefono: </b></label>
+		<input type="tel" name="telefono" pattern="[0-9]{9}" required> <small> (9 dígitos) </small><br>	
+
+		<label for="checkbox"><b> ¿Por qué quieres venir a Cádiz? </b></label><br>
+		<input type="checkbox" name="playas" value="playas"> Por sus playas <br>
+		<input type="checkbox" name="gastronomia" value="gastronomia"> Por su gastronomía <br>
+		<input type="checkbox" name="carnaval" value="carnaval"> Por el carnaval <br>
+		<input type="checkbox" name="monumentos" value="monumentos"> Por su monumentos <br> 
+
+		<label for="radio"><b> ¿Vienes de España o del extranjero? </b></label><br>
+		<input type="radio" name="nacionalidad" value="español"> Español <br>
+		<input type="radio" name="nacionalidad" value="extranjero"> Extranjero <br><br>
+
+		<input type="submit" value="Enviar">
+		<input type="reset">
+
+	</form>
+
+	<p><small> Si no deseas rellenar el formulario, pulsa <a href="./PracticaLibre.html"> aquí </a> para volver al inicio. </small></p>
+	
+</section>
+
+<hr/>
+	
+<footer>
+	
+	<p>&copy; Francisco José Castellano Vega. 2021 </p>
+
+</footer>
+
+</body>
+
+</html>
