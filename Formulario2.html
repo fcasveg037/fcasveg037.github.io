@@ -29,8 +29,8 @@
 	<input type="radio" name="nacionalidad" value="extranjero"> Extranjero <br><br>
 	
 	<label for="checkbox"><b> ¿Qué navegadores tienes instalados? </b></label><br>
-	<input type="checkbox" name"navegador1" value="chrome"> Google Chrome <br>
-	<input type="checkbox" name"navegador2" value="firefox"> Mozilla Firefox <br>
+	<input type="checkbox" name="navegador1" value="chrome"> Google Chrome <br>
+	<input type="checkbox" name="navegador2" value="firefox"> Mozilla Firefox <br>
 	<input type="checkbox" name="navegador3" value="edge"> Microsoft Edge <br>
 	<input type="checkbox" name="navegador4" value="safari"> Safari <br>
 	<input type="checkbox" name="navegador5" value="opera"> Opera <br><br>
@@ -49,9 +49,7 @@
 	</select><br><br>
 	
 	<label for="pwd"><b> Introduce una contraseña que debe tener entre 8 y 16 carácteres, al menos un dígito, una minúscula y una mayúscula. </b></label>
-	<input type="password" name="contraseña"><br><br>
-
-	**PENDIENTE** <br><br>
+	<input type="password" name="contraseña" minlength="8" maxlength="16" pattern="[A-Za-z0-9]+{8,16}"><br><br>
 	
 	<input type="submit" value="Enviar"> 
 	<input type="reset">
