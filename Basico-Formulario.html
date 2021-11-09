@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Formulario HTML</title>
+	<style>
+		html {
+			font-family: sans-serif;
+		}
+		header {
+			background: aqua;
+			color: gray;
+			border-style: dashed;
+		}
+		form {
+			background: aliceblue;
+			border-style: outset;
+			font-size: 2ex;
+			line-height: 2em;
+		}
+		.pregunta1y3 {
+			background: greenyellow;
+			color: blue;
+			font-size: 20px;
+		}
+		.pregunta2y4 {
+			background: antiquewhite;
+			color: crimson;	
+			font-size: 20px;
+		}
+		#contraseña {
+			background: black;
+			color: white;
+		}
+		.avatar {
+			vertical-align: middle;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
+		.seccion1 {
+			background: aliceblue;
+			border-style: groove;
+		}
+		.seccion2 {
+			background: aliceblue;
+			border-style: groove;
+		}
+		.parrafo1 {
+			color: green;
+			font-family: 'Courier New', Courier, monospace;
+			text-transform: uppercase;
+		}
+		
+		.parrafo2:first-letter {
+			font-size:200%;
+			float:left;
+			color: black;
+		}
+		.enlace1 {
+			color: green;
+			font-size: 18px;
+		}
+		.link:hover {
+			background: lightcoral;
+		}
+		.link:link {
+			color: cornflowerblue;
+		}
+		.link:visited {
+			background: blue;
+		}
+		.boton {
+			background: black;
+			color: whitesmoke;
+		}
+		footer {
+			color: violet;
+			font-size: small;
+		}
+
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<header> 
+
+	<h1> Formulario 2 de prueba de HTML5 </h1>
+	
+</header>
+
+<hr/>
+	
+<form action="./Gracias.html" method="get">
+   
+	<label class="pregunta1y3" for="radio"> ¿Cuál es tu color de pelo? </label><br>
+	<input type="radio" name="colorpelo" value="negro"> Negro <br>
+	<input type="radio" name="colorpelo" value="castaño"> Castaño <br>
+	<input type="radio" name="colorpelo" value="rubio"> Rubio <br>
+	<input type="radio" name="colorpelo" value="pelirrojo"> Pelirrojo <br><br>
+	
+	<label class="pregunta2y4" for="radio"> Selecciona tu nacionalidad: </label><br>
+	<input type="radio" name="nacionalidad" value="español"> Español <br>
+	<input type="radio" name="nacionalidad" value="extranjero"> Extranjero <br><br>
+	
+	<label class="pregunta1y3" for="checkbox">¿Qué navegadores tienes instalados?</label><br>
+	<input type="checkbox" name="navegador1" value="chrome"> Google Chrome <br>
+	<input type="checkbox" name="navegador2" value="firefox"> Mozilla Firefox <br>
+	<input type="checkbox" name="navegador3" value="edge"> Microsoft Edge <br>
+	<input type="checkbox" name="navegador4" value="safari"> Safari <br>
+	<input type="checkbox" name="navegador5" value="opera"> Opera <br><br>
+	
+	<label class="pregunta2y4"> ¿En qué provincia de Andalucía vives?</label>
+
+	<select name="provincia">
+		<option value="almeria"> Almería </option>
+		<option value="cadiz"> Cádiz </option>
+		<option value="cordoba"> Córdoba </option>
+		<option value="granada"> Granada </option>
+		<option value="huelva"> Huelva </option>
+		<option value="jaen"> Jaén </option>
+		<option value="malaga"> Málaga </option>
+		<option value="sevilla"> Sevilla </option>
+	</select><br><br>
+	
+	<label id="contraseña" for="pwd"><b> Introduce una contraseña que debe tener entre 8 y 16 carácteres, al menos un dígito, una minúscula y una mayúscula. </b></label>
+	<input type="password" name="contraseña" minlength="8" maxlength="16" pattern="[A-Za-z0-9]+{8,16}"><br><br>
+	
+	<input type="submit" value="Enviar"> 
+	<input type="reset">
+
+</form>
+
+<br>
+
+<section class="seccion1">
+	<h2> Probando CSS <img src="https://image.freepik.com/vector-gratis/plantilla-formulario-registro-diseno-plano_23-2147971971.jpg" alt="Avatar" class="avatar"></h2>
+	<p class="parrafo1"> Senserit mediocrem vis ex, et dicunt deleniti gubergren mei. Mel id clita mollis repudiare.</p>
+	<p class="parrafo2" style="text-align: justify; font-size: 0.5em;"> Cu nam labores lobortis definiebas, ei aliquyam salutatus persequeris quo, cum eu nemore fierent dissentiunt. Per vero dolor id, vide democritum scribentur eu vim, pri erroribus temporibus ex. Euismod molestie offendit has no. Quo te semper invidunt quaestio, per vituperatoribus sadipscing ei, partem aliquyam sensibus in cum.</p>	
+	<p style="white-space: nowrap; color: indigo;"> Sea utamur aperiam, te per choro accusamus consulatu. Brute munere corrumpit ut pri. Ea ipsum appareat erroribus mea. Mei probo inani aliquid ad. Omnis fabulas concludaturque an vix, an noluisse takimata facilisis pro, sit te volumus mandamus. Ad malorum imperdiet duo, ea possim utamur accusamus vix. </p>
+	<p style="white-space: pre-line; color: darkblue;"> Senserit mediocrem vis ex, et dicunt deleniti gubergren mei. 
+		Mel id clita mollis repudiare. Sed ad nostro delicatissimi, postea pertinax est an. 
+		Adhuc sensibus percipitur sed te, eirmod tritani debitis nec ea. Cu vis quis gubergren.</p>
+	<p style="white-space: pre-wrap; color: blue;"> Id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. 
+		Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. 
+		Ad augue inani postulant mel, mel ea qualisque forensibus.</p>
+	<h3> Enlaces:</h3>
+	<p class="enlace1"> Web oficial del <a href="https://www.iesguadalpeña.es"> IES Guadalpeña</a></p>
+	<p> Web oficial de <a href="http://www.arcosdelafrontera.es" class="link"> Arcos de la Frontera</a></p>
+	<p><i class="fa fa-book"></i> Web oficial de la <a href="https://www.juntadeandalucia.es/educacion/portals/web/ced"> Consejeria de Educación</a></p>
+	<p> Web oficial del <a href="https://www.educacionyfp.gob.es/portada.html" class="boton"> Ministerio de Educación</a></p>
+</section>
+
+<p> Pulsa <a href="./index.html"> aquí </a> para volver al indice. </p>
+
+<hr/>
+	
+<footer>
+	
+	<p>&copy; Francisco José Castellano Vega. 2021 </p>
+
+</footer>
+
+</body>
+
+</html>
