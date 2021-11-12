@@ -1,7 +1,50 @@
+header {
+    color: white;
+}
 .horizontal {
-background: brown;
+background: darkgoldenrod;
 }
-
+.horizontal ul {
+    list-style-type: none;
+    margin: 35px;
+    padding: 15px;
+    overflow: hidden;
+}
+.horizontal li {
+    float: left;
+}
+.horizontal li a {
+    display: block;
+    color:  black;
+    border: 1px solid grey;
+    background-color: ghostwhite;
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+}
+.horizontal li a:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
 .vertical {
-background: aqua;
+background: aquamarine;
 }
+.vertical ul {
+    list-style-type: none;
+    margin: 35px;
+    padding: 20px;
+    width: 200px;
+}
+.vertical li a {
+    display: block;
+    color:  black;
+    border: 1px solid grey;
+    background-color: ghostwhite;
+    padding: 3px;
+    text-decoration: none;
+}
+.vertical li a:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
