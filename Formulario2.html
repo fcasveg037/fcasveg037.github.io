@@ -4,6 +4,45 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>Formulario HTML</title>
+	<style>
+		html {
+			font-family: sans-serif;
+		}
+		header {
+			background: aqua;
+			color: gray;
+			border-style: dashed;
+		}
+		form {
+			background: aliceblue;
+			border-style: outset;
+			font-size: 2ex;
+			line-height: 2em;
+		}
+		.pregunta1y3 {
+			background: greenyellow;
+			color: blue;
+			font-size: 20px;
+		}
+		.pregunta2y4 {
+			background: antiquewhite;
+			color: crimson;	
+			font-size: 20px;
+		}
+		#contraseña {
+			background: black;
+			color: white;
+		}
+		section {
+			background: aliceblue;
+			border-style: groove;
+		}
+		footer {
+			color: violet;
+			font-size: small;
+		}
+
+	</style>
 </head>
 
 <body>
@@ -18,24 +57,24 @@
 	
 <form action="./Gracias.html" method="get">
    
-	<label for="radio"><b> ¿Cuál es tu color de pelo? </b></label><br>
+	<label class="pregunta1y3" for="radio"> ¿Cuál es tu color de pelo? </label><br>
 	<input type="radio" name="colorpelo" value="negro"> Negro <br>
 	<input type="radio" name="colorpelo" value="castaño"> Castaño <br>
 	<input type="radio" name="colorpelo" value="rubio"> Rubio <br>
 	<input type="radio" name="colorpelo" value="pelirrojo"> Pelirrojo <br><br>
 	
-	<label for="radio"><b> Selecciona tu nacionalidad: </b></label><br>
+	<label class="pregunta2y4" for="radio"> Selecciona tu nacionalidad: </label><br>
 	<input type="radio" name="nacionalidad" value="español"> Español <br>
 	<input type="radio" name="nacionalidad" value="extranjero"> Extranjero <br><br>
 	
-	<label for="checkbox"><b> ¿Qué navegadores tienes instalados? </b></label><br>
+	<label class="pregunta1y3" for="checkbox">¿Qué navegadores tienes instalados?</label><br>
 	<input type="checkbox" name="navegador1" value="chrome"> Google Chrome <br>
 	<input type="checkbox" name="navegador2" value="firefox"> Mozilla Firefox <br>
 	<input type="checkbox" name="navegador3" value="edge"> Microsoft Edge <br>
 	<input type="checkbox" name="navegador4" value="safari"> Safari <br>
 	<input type="checkbox" name="navegador5" value="opera"> Opera <br><br>
 	
-	<label><b> ¿En qué provincia de Andalucía vives?</b></label>
+	<label class="pregunta2y4"> ¿En qué provincia de Andalucía vives?</label>
 
 	<select name="provincia">
 		<option value="almeria"> Almería </option>
@@ -48,7 +87,7 @@
 		<option value="sevilla"> Sevilla </option>
 	</select><br><br>
 	
-	<label for="pwd"><b> Introduce una contraseña que debe tener entre 8 y 16 carácteres, al menos un dígito, una minúscula y una mayúscula. </b></label>
+	<label id="contraseña" for="pwd"><b> Introduce una contraseña que debe tener entre 8 y 16 carácteres, al menos un dígito, una minúscula y una mayúscula. </b></label>
 	<input type="password" name="contraseña" minlength="8" maxlength="16" pattern="[A-Za-z0-9]+{8,16}"><br><br>
 	
 	<input type="submit" value="Enviar"> 
@@ -56,8 +95,12 @@
 
 </form>
 
-<section>
+<br>
 
+<section>
+	<h2> Probando distintos estilos CSS</h2>
+	<p> Primer parráfo de prueba probando distintos estilos de CSS</p>
+	<p> Primer parráfo de prueba probando distintos estilos de CSS</p>
 	<p> Pulsa <a href="./index.html"> aquí </a> para volver al indice. </p>
 	
 </section>
