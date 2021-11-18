@@ -11,14 +11,10 @@ header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /*height: 80%;*/
         align-items: center;
 }
 .imagenHeader img {
     height: 15em; 
-}
-.imagenHeader {
-    /*width: 52%;*/
 }
 .textoHeader {  
     color: white;
@@ -45,8 +41,19 @@ header {
     margin: 2%;
     padding: 2%;
 }
+.Anuncio:hover {
+    background-color: black;
+    color:white;
+    font-weight: bold;
+}
 .textoAnuncio {
     color: red;
+    font-size: 25pt;
+    font-weight: bold;
+    text-align: center;
+}
+.textoAnuncio:hover {
+    color: white;
     font-size: 25pt;
     font-weight: bold;
     text-align: center;
@@ -54,6 +61,11 @@ header {
 .cabezaAnuncio img {
     width: 14em;
     height: 14em;
+    border-radius: 50%;
+}
+.cabezaAnuncio img:hover {
+    width: 19em;
+    height: 19em;
     border-radius: 50%;
 }
 .cabezaAnuncio {
