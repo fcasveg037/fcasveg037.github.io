@@ -1,0 +1,80 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 30px;
+    background-color: lightskyblue;
+    text-align: center;
+    color: midnightblue;
+    border: 2px solid midnightblue;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: midnightblue;
+}
+
+nav a{
+    color: lightskyblue;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+section a, section a:visited {
+    text-decoration: none;
+    color: midnightblue;
+}
+
+section a:hover {
+    background-color: midnightblue;
+    color: lightskyblue;
+}
+
+section h2{
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    color: midnightblue;
+}
+
+aside {
+    flex: 30%;
+    background-color: lightskyblue;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid midnightblue;
+}
+
+aside img{
+    height: 300px;
+    width: 400px;
+    border-radius: 50%;
+    border: 2px solid white
+}
+
+.seccion1, .seccion2 {
+    flex: 30%;
+    background-color: lightskyblue;
+    padding: 20px;
+    border: 2px solid midnightblue;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+    background-color: midnightblue;
+    color: lightskyblue;
+}
+
+@media screen and (max-width: 700px){
+    nav, .row {
+        flex-direction: column;
+    }    
+}
