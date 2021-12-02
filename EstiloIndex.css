@@ -56,7 +56,8 @@ aside img{
     height: 300px;
     width: 400px;
     border-radius: 50%;
-    border: 2px solid white
+    border: 2px solid white;
+    max-width:100%;
 }
 
 .seccion1, .seccion2 {
@@ -75,6 +76,7 @@ footer {
 
 @media screen and (max-width: 700px){
     nav, .row {
+        display: flex;
         flex-direction: column;
     }    
 }
