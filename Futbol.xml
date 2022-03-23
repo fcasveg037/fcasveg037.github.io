@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Futbol.css"?>
+<!DOCTYPE Ligas_Futbol [
+<!ELEMENT Ligas_Futbol (Pais)+>
+<!ELEMENT Pais (Nombre_Liga, Equipo+)>
+    <!ATTLIST Pais Nombre ID #REQUIRED>
+<!ELEMENT Nombre_Liga (#PCDATA)>
+<!ELEMENT Equipo (Nombre, Fundacion, Estadio, Ciudad, Titulo?)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Fundacion (#PCDATA)>
+<!ELEMENT Estadio (#PCDATA)>
+<!ELEMENT Ciudad (#PCDATA)>
+<!ELEMENT Titulo (#PCDATA)>
+]>
+
+<Ligas_Futbol>
+    <Pais Nombre="España"> 
+        <Nombre_Liga> Liga Santander </Nombre_Liga>
+        <Equipo>
+            <Nombre> FC Barcelona </Nombre>
+            <Fundacion> Año 1899 </Fundacion>
+            <Estadio> Camp Nou </Estadio>
+            <Ciudad> Barcelona </Ciudad>
+            <Titulo> 5 Champions League, 3 Mundial de Clubes, 26 Ligas y 31 Copas del Rey </Titulo>
+        </Equipo>
+        <Equipo>
+            <Nombre> Real Madrid </Nombre>
+            <Fundacion> Año 1902 </Fundacion>
+            <Estadio> Santiago Bernabeu </Estadio>
+            <Ciudad> Madrid </Ciudad>
+            <Titulo> 13 Champions League, 4 Mundial de Clubes, 34 Ligas y 19 Copas del Rey </Titulo>
+        </Equipo>
+        <Equipo>
+            <Nombre> Sevilla </Nombre>
+            <Fundacion> Año 1890 </Fundacion>
+            <Estadio> Ramón Sánchez-Pizjuán </Estadio>
+            <Ciudad> Sevilla </Ciudad>
+            <Titulo> 6 Europa League, 1 Liga y 5 Copas del Rey </Titulo>
+        </Equipo>
+        <Equipo>
+            <Nombre> Atlético de Madrid </Nombre>
+            <Estadio> Wanda Metropolitano </Estadio>
+            <Fundacion> Año 1903 </Fundacion>
+            <Ciudad> Madrid </Ciudad>
+            <Titulo> 3 Europa League, 11 Ligas y 10 Copas del Rey </Titulo>
+        </Equipo>
+    </Pais>
+    <Pais Nombre="Inglaterra"> 
+        <Nombre_Liga> Premier League </Nombre_Liga>
+        <Equipo>
+            <Nombre> Chelsea </Nombre>
+            <Fundacion> Año 1905 </Fundacion>
+            <Estadio> Stamford Bridge </Estadio>
+            <Ciudad> Londres </Ciudad>
+            <Titulo> 2 Champions League, 6 Ligas y 8 Copas FA </Titulo>
+        </Equipo>
+        <Equipo>
+            <Nombre> Manchester United </Nombre>
+            <Fundacion> Año 1878 </Fundacion>
+            <Estadio> Old Trafford </Estadio>
+            <Ciudad> Manchester </Ciudad>
+            <Titulo> 3 Champions League, 20 Ligas y 12 Copas FA </Titulo>
+        </Equipo>
+        <Equipo>
+            <Nombre> Manchester City </Nombre>
+            <Fundacion> Año 1880 </Fundacion>
+            <Estadio> Etihad Stadium </Estadio>
+            <Ciudad> Manchester </Ciudad>
+            <Titulo> 7 Ligas y 6 Copas FA </Titulo>
+        </Equipo>
+        <Equipo>
+            <Nombre> Arsenal </Nombre>
+            <Fundacion> Año 1886 </Fundacion>
+            <Estadio> Emirates Stadium </Estadio>
+            <Ciudad> Londres </Ciudad>
+            <Titulo> 13 Ligas y 14 Copas FA </Titulo>
+        </Equipo>
+    </Pais>
+    <Pais Nombre="Italia"> 
+        <Nombre_Liga> Serie A </Nombre_Liga>
+        <Equipo>
+            <Nombre> AC Milan </Nombre>
+            <Fundacion> Año 1899 </Fundacion>
+            <Estadio> San Siro </Estadio>
+            <Ciudad> Milan </Ciudad>
+            <Titulo> 7 Champions League, 1 Mundial de Clubes, 18 Ligas y 5 Copas de Italia </Titulo>
+        </Equipo>
+        <Equipo>
+            <Nombre> Juventus </Nombre>
+            <Fundacion> Año 1897 </Fundacion>
+            <Estadio> Allianz Stadium </Estadio>
+            <Ciudad> Turín </Ciudad>
+            <Titulo> 2 Champions League, 36 Ligas y 14 Copas de Italia </Titulo>
+        </Equipo>
+        <Equipo>
+            <Nombre> Inter de Milan </Nombre>
+            <Fundacion> Año 1908 </Fundacion>
+            <Estadio> San Siro </Estadio>
+            <Ciudad> Milan </Ciudad>
+            <Titulo> 3 Champions League, 1 Mundial de Clubes, 19 Ligas y 7 Copas de Italia </Titulo>
+        </Equipo>
+        <Equipo>
+            <Nombre> AS Roma </Nombre>
+            <Fundacion> Año 1927 </Fundacion>
+            <Estadio> Estadio Olímpico de Roma </Estadio>
+            <Ciudad> Roma </Ciudad>
+            <Titulo> 3 Ligas y 9 Copas de Italia </Titulo>
+        </Equipo>
+    </Pais>
+</Ligas_Futbol>

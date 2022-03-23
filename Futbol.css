@@ -1,0 +1,50 @@
+Pais {
+    display: block;
+    border: solid 2px black;
+    margin: 2em;
+    padding: 10px;
+}
+
+Pais[Nombre="España"] {
+    background-color:  #f4d03f ;
+}
+
+Pais[Nombre="Inglaterra"] {
+    background-color:  #e74c3c ;
+}
+
+Pais[Nombre="Italia"] {
+    background-color: #008000 ;
+}
+
+Nombre_Liga {
+    font-size: medium;
+    font-weight: bold;
+    border: solid 1px;
+    padding: 3px;
+    background-color: #abebc6  ;
+}
+
+Equipo {
+    display: block;
+    border: solid 1px black;
+    margin: 1em;
+    background-color: #aed6f1  ;
+}
+
+Equipo:hover {
+    background-color: #00008B;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+Nombre, Fundacion, Estadio, Ciudad, Titulo {
+    display: block;
+    margin: 5px;
+}
+
+Nombre {
+    font-weight: bold;
+    text-decoration: underline ;
+}

@@ -60,7 +60,7 @@ aside img{
     max-width:100%;
 }
 
-.seccion1, .seccion2 {
+.seccion1, .seccion2, .seccion3 {
     flex: 30%;
     background-color: lightskyblue;
     padding: 20px;
